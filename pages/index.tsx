@@ -1,4 +1,5 @@
 import Header from "@/src/Header";
+import Introduce from "@/src/Introduce";
 import Head from "next/head";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       </Head>
       <main className="container mx-auto	">
         <Header />
+        <Introduce />
       </main>
     </>
   );
