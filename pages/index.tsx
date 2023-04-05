@@ -1,6 +1,13 @@
 import Header from "@/src/Header";
 import Introduce from "@/src/Introduce";
+import { css } from "@emotion/react";
 import Head from "next/head";
+
+const containerStyle = () => css`
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 20px;
+`;
 
 export default function Home() {
   return (
@@ -11,7 +18,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="container mx-auto	">
+      <main css={containerStyle}>
         <Header />
         <Introduce />
       </main>
